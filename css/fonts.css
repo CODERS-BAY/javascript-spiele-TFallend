@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'pokemon';
+    src: url('../fonts/Pokemon\ Solid.ttf') format('woff'),
+        url('../fonts/Pokemon\ Hollow.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
