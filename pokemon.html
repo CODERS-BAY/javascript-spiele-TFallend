@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Pokemón fangen</title>
+        
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/fonts.css" />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body id="pokemonBg">
+        <header>
+
+            <nav>
+                <ul>
+                    <li><a href="pokemon.html">Pokemon fangen</a></li>
+                    <li><a href="schere.html">Schere, Stein, Papier</a></li>
+                    <li><a href="index.html">Zahlen raten</a></li>
+                    <li><a href="code.html">Code Breaker</a></li>                           
+                </ul>
+            </nav>
+        </header>
+
+
+        <h1>PoKéMoN fangen</h1>
+        <div id="playbox">
+
+    
+            <div id="screen1" class="screen active">            
+
+                <h2>Wo bist du Unterwegs?</h2>
+                <select id="landscape">
+                    <option value="9.81">Freie Fläche</option>
+                    <option value="1.62">Hohes Gras</option>
+                    <option value="3.69">Höhle</option>
+                    <option value="24.79">Wasser</option>
+                </select>
+
+                <h2>Wie viele Pokébälle hast du mit?</h2>
+                <input type="number" id="tryCounter" name="tryCounter">
+
+                <div class="button" onclick="changeScreen()">Komm schnapp sie dir!</div>
+
+            </div>
+
+            <div id="screen2" class="screen">
+                <h2>Das Pokémon </br>hat sich versteckt!</br> Werfe den Pokéball!</h2>
+                <label>Gib den Wurfwinkel ein</label>
+                <input type="number" id="angle" name="angle" placeholder="0 - 90 Grad"> 
+                <label>Gib die Wurfstärke ein</label>
+                <input type="number" id="strength" name="strength">
+
+                <div class="button" onclick="pokeballThrow()">Pokeball gooo!</div>
+
+                <h3 id="distance">Wie Weit ist das Pokemon entfernt?</h3>
+                <p></p>
+                
+            </div>
+        </div>    
+
+
+
+
+
+
+
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
