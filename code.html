@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Code Breaker</title>
+        
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body id="codebreaker">
+        <header>
+
+            <nav>
+                <ul>
+                    <li><a href="pokemon.html">Pokemon fangen</a></li>
+                    <li><a href="schere.html">Schere, Stein, Papier</a></li>
+                    <li><a href="zahlen.html">Zahlen raten</a></li>
+                    <li><a href="code.html">Code Breaker</a></li>                           
+                </ul>
+            </nav>
+        </header>
+
+        <div id="codeContainer">
+
+            <div id="screen1" class="screen active">      
+                
+                <h2>Wie oft möchtest du spielen</h2>
+                <input type="number" id="tryCounter" name="tryCounter" placeholder="maximal 12 Versuche">
+                <div class="buttonCode" onclick="changeScreen()">Los geht´s</div>
+
+            </div>
+
+            <div id="screen2" class="screen" class="codeBreakerInput">            
+
+                <h2>Code Breaker</h2>
+                
+                <input type="number" id="tryNumber1" name="tryNumber1">
+                <input type="number" id="tryNumber2" name="tryNumber2">
+                <input type="number" id="tryNumber3" name="tryNumber3">
+
+                <div class="buttonCode">Prüfe den Code</div>
+            </div>
+        </div>
+
+
+        </div>
+         
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+         <script type="text/javascript" src="js/lib.js"></script>
+         <script type="text/javascript" src="js/script-code.js"></script>
+    </body>
+</html>

@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box; /* PADDING WIRD NACH INNEN GERECHNET */
+
+}
+
+:root {
+    --primary : rgb(0, 164, 170);
+    --secondary : rgb(0, 117, 185);
+    --third : rgb(0, 71, 112);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sissorStonePaper {
+    background-image: url(../images/tisch.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.buttonSissor {
+
+}
+

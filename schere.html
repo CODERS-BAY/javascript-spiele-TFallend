@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Pokemón fangen</title>
+        
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+
+    <body id="sissorStonePaper">
+        <header>
+
+            <nav>
+                <ul>
+                    <li><a href="pokemon.html">Pokemon fangen</a></li>
+                    <li><a href="schere.html">Schere, Stein, Papier</a></li>
+                    <li><a href="zahlen.html">Zahlen raten</a></li>
+                    <li><a href="code.html">Code Breaker</a></li>                           
+                </ul>
+            </nav>
+         </header>
+
+        <div id="contentSissor">
+            <div id="screenSissor1" class="screenSis1">            
+
+                <h2 class="schereH2">Lass uns Schere, Stein, Papier spielen!</h2>
+                <input type="text" id="name" name="name" placeholder="Gib deinen Namen an" required />
+
+                <input type="number" id="counterInput" name="counterInput" placeholder="Wie oft willst du spielen?" required />
+
+                <div class="buttonSissor" onclick="addCounter()">Lass uns Spielen</div>
+
+            </div>
+
+            <div id="screenSissor2" class="screenSis hidden">
+                
+  
+                <h2 class="schereH2">Schere, Stein, Papier</h2>
+                <div id="counterAnzeige">
+                <h5>User </br>
+                        <span id="userCounterContainer">0</span>
+                    </h5>
+                    <h5>PC </br>
+                        <span id="pcCounterContainer">0</span>
+                    </h5>
+                </div>
+                <div id="battleGround">
+                <img id="userChoiceImg" src="images/muster.png" alt="users Choice" />
+                <img id="pcChoiceImg" src="images/muster.png" alt="PC Choice" />
+            </div>
+
+            <div class="containerSchere">
+                
+                <img src="images/option1.png" value="Option 1" onclick="play(1)" />
+                <img src="images/option2.png" value="Option 2" onclick="play(2)" />
+                <img src="images/option3.png" value="Option 3" onclick="play(3)" />
+            </div>
+                
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/lib.js"></script>
+        <script type="text/javascript" src="js/script-schere.js"></script>
+    </body>
+</html>
